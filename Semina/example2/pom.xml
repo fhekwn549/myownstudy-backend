@@ -30,24 +30,69 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+		<!--JPA-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		
+		<!--Rest-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
 
+		<!--Lombok-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!--Database-->
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+    		<groupId>org.postgresql</groupId>
+    		<artifactId>postgresql</artifactId>
+    		<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!--U2Ware Common Dependencies-->
+		<dependency>
+            <groupId>io.u2ware.common</groupId>
+            <artifactId>u2ware-common-data</artifactId>
+            <version>3.4.13</version>
+        </dependency>
+        <dependency>
+            <groupId>io.u2ware.common</groupId>
+            <artifactId>u2ware-common-oauth2</artifactId>
+            <version>3.4.13</version>
+        </dependency>
+        <dependency>
+            <groupId>io.u2ware.common</groupId>
+            <artifactId>u2ware-common-stomp</artifactId>
+            <version>3.4.13</version>
+        </dependency>
+        <dependency>
+            <groupId>io.u2ware.common</groupId>
+            <artifactId>u2ware-common-docs</artifactId>
+            <version>3.4.13</version>
+        </dependency>
+		
+		<!--Spring REST Docs-->
+		<dependency>
+			<groupId>org.springframework.restdocs</groupId>
+			<artifactId>spring-restdocs-mockmvc</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

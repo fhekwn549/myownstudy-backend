@@ -8,7 +8,7 @@ import lombok.Data;
 //ORM - Object Relation Mapping
 @Entity
 @Data
-@Table(name = "t_str") //테이블 생성
+@Table(name = "example_hello") //테이블 생성
 public class Hello {
 
     @Id
