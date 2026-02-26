@@ -35,7 +35,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
 		<!--Rest-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -104,7 +108,7 @@
 		<dependency>
 			<groupId>com.github.ubisam-heung</groupId>
 			<artifactId>api-response</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>1.0.4</version>
 		</dependency>
 	</dependencies>
 
