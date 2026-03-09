@@ -42,8 +42,14 @@ public class HelloHandler {
         System.out.println("[beforeSearch] testtesttesttesttesttesttesttest");
 
         JpaSpecificationBuilder<Hello> query = JpaSpecificationBuilder.of(Hello.class);
-        query.where()
-            .and().eq("id", hello.getHelloId()).build(spec);
+
+        String keyword = hello.getKeyword();
+        if (keyword != null && !keyword.isEmpty()) {
+            query.where()
+                .or().like("name", "%" + keyword + "%")
+                .or().like("email", "%" + keyword + "%")
+                .build(spec);
+        }
     }
 
     @HandleBeforeSave

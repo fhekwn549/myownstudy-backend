@@ -1,4 +1,4 @@
-package com.ubisam.example2.api.worlds;
+package com.ubisam.example2.api.Worlds;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
